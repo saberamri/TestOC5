@@ -43,3 +43,6 @@ class Player(BaseModel):
         if age < 18:
             raise ValueError('age must be > 18')
         return v
+
+    def __str__(self):
+        pass
