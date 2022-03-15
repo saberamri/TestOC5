@@ -1,0 +1,32 @@
+
+
+git config --global user.name "Saber AMRI"
+git config --global user.email amrisaber.essai@gmail.com
+git config --global color.diff auto
+git config --global color.status auto
+git config --global color.branch auto
+git config --global core.editor vim
+git config --global merge.tool vimdiff
+
+#intialiser le git
+git init
+
+# ajouter un fichier .gitignore pour éviter que les fichier envoient certains trucs
+
+#ajouter tous les fichiers
+git add .
+
+#vérifier les ajouts
+git status
+
+# premier commit
+git commit -m "first commit models and jason"
+
+#relier le depot local au depot distant
+git remote add origin https://github.com/saberamri/ProjectOC4.git
+
+#vérifier que tout va bien
+git remote -v
+
+#pusher sur la branche principale
+git push origin main  
